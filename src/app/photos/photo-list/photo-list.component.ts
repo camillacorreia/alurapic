@@ -9,8 +9,8 @@ import { PhotoService } from '../photo/photo.service';
   styleUrls: ['./photo-list.component.scss']
 })
 export class PhotoListComponent implements OnInit {
-
   photos: Photo[] = [];
+  filter: string = '';
 
   constructor(
     private photoService: PhotoService,
