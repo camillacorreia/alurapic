@@ -8,6 +8,7 @@
       placeholder="search..." 
       autofocus
       (keyup)="debounce.next(buscaDescricao.value)"
+      [value]="value"
     >
   </form>
 </div>
