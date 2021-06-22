@@ -9,6 +9,7 @@ import { AuthService } from 'src/app/core/auth.service';
 export class SignInComponent implements OnInit {
     
   loginForm!: FormGroup;
+  @ViewChild('userNameInput') userNameInput!: ElementRef<HTMLInputElement>;
   
   constructor(
     private formBuilder: FormBuilder,
@@ -34,6 +35,7 @@ export class SignInComponent implements OnInit {
         err => {
           console.error(err);
           this.loginForm.reset();
+          this.userNameInput.nativeElement.focus();
           alert('invalid user name or password');
         }
       )
