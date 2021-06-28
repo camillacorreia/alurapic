@@ -1,3 +1,5 @@
+import { MessageComponent } from './../shared/components/message/message.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DarkenOnHoverModule } from './../shared/directives/darken-on-hover/darken-on-hover.module';
 import { SearchComponent } from './photo-list/search/search.component';
 import { CardModule } from './../shared/components/card/card.module';
@@ -26,7 +28,9 @@ imports: [
   HttpClientModule,
   CommonModule,
   CardModule,
-  DarkenOnHoverModule
+  DarkenOnHoverModule,
+  FormsModule,
+  ReactiveFormsModule
 ]
 })
 export class PhotosModule { }
