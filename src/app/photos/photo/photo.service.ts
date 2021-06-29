@@ -34,4 +34,8 @@ export class PhotoService {
     return this.http
       .post(`${environment.baseUrl}/photos/upload`, formData)
   }
+
+  findById(id: string) {
+    return this.http.get<Photo>(`${environment.baseUrl}/photos/${id}`);
+  }
 }

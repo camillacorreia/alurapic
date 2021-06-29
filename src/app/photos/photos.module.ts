@@ -1,4 +1,5 @@
-import { MessageComponent } from './../shared/components/message/message.component';
+import { RouterModule } from '@angular/router';
+import { PhotoDetailsComponent } from './photo-details/photo-details.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DarkenOnHoverModule } from './../shared/directives/darken-on-hover/darken-on-hover.module';
 import { SearchComponent } from './photo-list/search/search.component';
@@ -15,22 +16,24 @@ import { PhotosComponent } from './photo-list/photos/photos.component';
 import { PhotoComponent } from './photo/photo.component';
 
 @NgModule({
-  declarations: [ 
-  PhotoComponent, 
-  PhotoListComponent, 
-  PhotoFormComponent, 
+  declarations: [
+  PhotoComponent,
+  PhotoListComponent,
+  PhotoFormComponent,
   PhotosComponent,
+  PhotoDetailsComponent,
   FilterByDescription,
   LoadButtonComponent,
   SearchComponent
 ],
-imports: [ 
+imports: [
   HttpClientModule,
   CommonModule,
   CardModule,
   DarkenOnHoverModule,
   FormsModule,
-  ReactiveFormsModule
+  ReactiveFormsModule,
+  RouterModule
 ]
 })
 export class PhotosModule { }
