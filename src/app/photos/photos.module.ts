@@ -1,3 +1,4 @@
+import { PhotoCommentsComponent } from './photo-details/photo-comments/photo-comments.component';
 import { RouterModule } from '@angular/router';
 import { PhotoDetailsComponent } from './photo-details/photo-details.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -22,6 +23,7 @@ import { PhotoComponent } from './photo/photo.component';
   PhotoFormComponent,
   PhotosComponent,
   PhotoDetailsComponent,
+  PhotoCommentsComponent,
   FilterByDescription,
   LoadButtonComponent,
   SearchComponent
